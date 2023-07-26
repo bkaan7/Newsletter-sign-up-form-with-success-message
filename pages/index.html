@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(4, 100%, 67%);
+      }
+      .attribution a {
+        color: hsl(140, 49%, 62%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sign-up form start -->
+      <div class="boxOne">
+        <span class="header">Stay updated!</span>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="aciklama">
+          <span
+            ><img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg"
+              alt=""
+            />Product discovery and building what matters
+          </span>
+          <span
+            ><img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg"
+              alt=""
+            />Measuring to ensure updates are a success
+          </span>
+          <span
+            ><img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg"
+              alt=""
+            />And much more!</span
+          >
+        </div>
+        <div class="mailBox">
+          <form>
+            <div class="label-form">
+              <span class="text-edit"> Email address </span>
+              <span class="error-message">Valid email required</span>
+            </div>
+            
+            
+            <input type="email"
+            placeholder="email@company.com" class="input-mail" />
+            
+          </form>
+          <button type="submit" class="btn-subscribe" onclick="getValue()"> 
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
+
+      <div class="boxTwo">
+        <img
+          src="/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
+          alt="Testxzdwqas asd wa"
+        />
+      </div>
+        <!-- Sign-up form end -->
+       
+
+     
+    </div>
+
+     <!-- Success message start -->
+
+     <div class="success-box">
+        
+      <img src="/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" alt="">
+
+      <span class="header">Thanks for subscribing!</span> 
+      
+      <p class="success-text">
+        A confirmation email has been sent to
+        <span class="input-value"></span>. Please open it and click the button inside to
+        confirm your subscription.
+      </p>
+       
+      <button class="btn-subscribe" onclick="tamTersi()">Dismiss message</button>
+
+      
+    </div>
+
+      <!-- Success message end -->
+    
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        rel="noopener"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/bkaan7" target="_blank">Kaan Gedikli</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
